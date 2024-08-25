@@ -61,7 +61,6 @@ a:focus {
   color: #608dfd;
 }
 
-
 ul,
 ol {
   list-style: none;
@@ -235,8 +234,6 @@ a:focus,
   outline: none;
   outline-offset: none;
 }
-
-
 
 /* Header Section */
 .intro {
