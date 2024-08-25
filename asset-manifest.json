@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/Offset-Application/static/css/main.e6c13ad2.css",
+    "main.js": "/Offset-Application/static/js/main.1c0d8c35.js",
+    "static/js/453.c1f159d9.chunk.js": "/Offset-Application/static/js/453.c1f159d9.chunk.js",
+    "index.html": "/Offset-Application/index.html",
+    "main.e6c13ad2.css.map": "/Offset-Application/static/css/main.e6c13ad2.css.map",
+    "main.1c0d8c35.js.map": "/Offset-Application/static/js/main.1c0d8c35.js.map",
+    "453.c1f159d9.chunk.js.map": "/Offset-Application/static/js/453.c1f159d9.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.e6c13ad2.css",
+    "static/js/main.1c0d8c35.js"
+  ]
+}
