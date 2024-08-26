@@ -3,16 +3,16 @@ import React from "react";
 export const Infra = () => {
   const infra = [
     {
-      "icon": "fa fa-comments-o",
-      "title": "PREPRESS",
+      "image": "../img/about.jpg",
+      "title": "PREPRESS"
     },
     {
-      "icon": "fa fa-comments-o",
-      "title": "PRINTING",
+      "image": "../img/about.jpg",
+      "title": "PRINTING"
     },
     {
-      "icon": "fa fa-comments-o",
-      "title": "BINDING",
+      "image": "../img/about.jpg",
+      "title": "BINDING"
     }
   ]
 
@@ -25,12 +25,12 @@ export const Infra = () => {
         <div className="row">
           {infra
             ? infra.map((d, i) => (
-                <div key={`${d.title}-${i}`} className="col-xs-6 col-md-3">
-                  {" "}
-                  <i className={d.icon}></i>
-                  <h3>{d.title}</h3>
-                </div>
-              ))
+              <div key={`${d.title}-${i}`} className="col-xs-6 col-md-3">
+                {" "}
+                <img src={d.image} style={{ "border-radius": "100px", "width": "200px", "height": "200px", "box-shadow": "5px 5px 10px rgba(0, 0, 0, 0.7)", "margin-top": "20px" }} />
+                <h3>{d.title}</h3>
+              </div>
+            ))
             : "Loading..."}
         </div>
       </div>
