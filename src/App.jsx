@@ -5,47 +5,48 @@ import { About } from "./components/about";
 import { Services } from "./components/services";
 import { Products } from "./components/products";
 import { Contact } from "./components/contact";
+import { Blogs } from "./components/blogs"
 import { Layout } from "./components/layout";
-import {createBrowserRouter, createRoutesFromElements, Route, RouterProvider} from 'react-router-dom';
+import { createBrowserRouter, createRoutesFromElements, Route, RouterProvider } from 'react-router-dom';
 
 const router = createBrowserRouter(
   createRoutesFromElements(
-    <Route path = "/" element = {<Layout />}>
+    <Route path="/" element={<Layout />}>
 
       <Route
-       index 
-       element = {<Header />}
-        />
-
-      <Route 
-        path = "about us"
-        element = {<About />}
+        index
+        element={<Header />}
       />
 
       <Route
-        path = "services" 
-        element = {<Services />}
-        />
+        path="about us"
+        element={<About />}
+      />
 
       <Route
-       path = "infra" 
-       element = {<Infra />} 
-       />
+        path="services"
+        element={<Services />}
+      />
 
       <Route
-       path = "products" 
-       element = {<Products />}
-       />
+        path="infra"
+        element={<Infra />}
+      />
 
-      {/* <Route
-       path = "blogs"
-       element = {<Blogs />} 
-       /> */}
+      <Route
+        path="products"
+        element={<Products />}
+      />
 
-      <Route 
-        path = "contact" 
-        element = {<Contact />} 
-        />
+      <Route
+        path="blogs"
+        element={<Blogs />}
+      />
+
+      <Route
+        path="contact"
+        element={<Contact />}
+      />
 
     </Route>
   )
@@ -54,7 +55,7 @@ const router = createBrowserRouter(
 
 const App = () => {
 
-  return(
+  return (
     <RouterProvider router={router} />
   )
 
