@@ -9,7 +9,7 @@ const initialState = {
 };
 export const Contact = () => {
   const contact = {
-    "address": "4321 California St, San Francisco, CA 12345 ",
+    "address": "Jeyakar Offset Printers(P) LTD.,   54, Chairman A.S.K.T.Road, Sivakasi -626189",
     "phone": "+1 123 456 1234",
     "email": "info@company.com",
     "facebook": "fb.com",
@@ -23,14 +23,14 @@ export const Contact = () => {
     setState((prevState) => ({ ...prevState, [name]: value }));
   };
   const clearState = () => setState({ ...initialState });
-  
-  
+
+
   const handleSubmit = (e) => {
     e.preventDefault();
     console.log(name, email, message);
-    
+
     {/* replace below with your own Service ID, Template ID and Public Key from your EmailJS account */ }
-    
+
     emailjs
       .sendForm("YOUR_SERVICE_ID", "YOUR_TEMPLATE_ID", e.target, "YOUR_PUBLIC_KEY")
       .then(
@@ -163,6 +163,6 @@ export const Contact = () => {
 };
 
 export const contactLoader = async () => {
-  const res = await fetch ('http://localhost:3001/Contact')
+  const res = await fetch('http://localhost:3001/Contact')
   return res.json()
 }
