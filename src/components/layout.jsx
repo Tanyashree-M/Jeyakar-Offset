@@ -1,7 +1,8 @@
 import React from "react";
-import { NavLink, Outlet } from "react-router-dom";
+import { NavLink, Outlet, useMatch } from "react-router-dom";
 
 export const Layout = () => {
+  const match = useMatch('/services');
   return (
     <div>
       <nav id="menu" className="navbar navbar-default navbar-fixed-top">
@@ -34,7 +35,7 @@ export const Layout = () => {
                   ABOUT US
                 </NavLink>
               </li>
-              <li>
+              <li className={match ? 'active' : ''}>
                 <NavLink to="services" className="page-scroll">
                   SERVICES
                 </NavLink>

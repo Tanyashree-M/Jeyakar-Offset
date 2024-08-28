@@ -38,10 +38,10 @@ const router = createBrowserRouter(
         element={<Products />}
       />
 
-      <Route
+      {/* <Route
         path="blogs"
         element={<Blogs />}
-      />
+      /> */}
 
       <Route
         path="contact"
