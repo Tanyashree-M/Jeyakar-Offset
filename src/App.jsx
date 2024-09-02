@@ -5,7 +5,6 @@ import { About } from "./components/about";
 import { Services } from "./components/services";
 import { Products } from "./components/products";
 import { Contact } from "./components/contact";
-import { Blogs } from "./components/blogs"
 import { Layout } from "./components/layout";
 import { createBrowserRouter, createRoutesFromElements, Route, RouterProvider } from 'react-router-dom';
 
@@ -37,11 +36,6 @@ const router = createBrowserRouter(
         path="products"
         element={<Products />}
       />
-
-      {/* <Route
-        path="blogs"
-        element={<Blogs />}
-      /> */}
 
       <Route
         path="contact"

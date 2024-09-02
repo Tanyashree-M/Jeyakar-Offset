@@ -1,5 +1,6 @@
 import React from "react";
 import { NavLink, Outlet } from "react-router-dom";
+import Scroll from "./scroll";
 
 export const Layout = () => {
   return (
@@ -49,11 +50,7 @@ export const Layout = () => {
                   PRODUCTS
                 </NavLink>
               </li>
-              {/* <li>
-                <NavLink to="blogs" className="page-scroll">
-                  BLOGS
-                </NavLink>
-              </li> */}
+
               <li>
                 <NavLink to="contact" className="page-scroll">
                   CONTACT US
@@ -63,6 +60,7 @@ export const Layout = () => {
           </div>
         </div>
       </nav>
+      <Scroll />
       <Outlet />
     </div>
 
