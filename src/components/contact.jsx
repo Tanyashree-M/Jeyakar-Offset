@@ -17,31 +17,33 @@ export const Contact = () => {
     "youtube": "youtube.com"
   }
   const [{ name, email, message }, setState] = useState(initialState);
+  const [emailSentPrompt, setEmailSentPrompt] = useState('');
 
   const handleChange = (e) => {
     const { name, value } = e.target;
     setState((prevState) => ({ ...prevState, [name]: value }));
   };
-  const clearState = () => setState({ ...initialState });
-
 
   const handleSubmit = (e) => {
     e.preventDefault();
     console.log(name, email, message);
 
-    {/* replace below with your own Service ID, Template ID and Public Key from your EmailJS account */ }
-
     emailjs
-      .sendForm("YOUR_SERVICE_ID", "YOUR_TEMPLATE_ID", e.target, "YOUR_PUBLIC_KEY")
+      .sendForm("service_jeyakar_offset", "template_3xgeq0c", e.target, "ug680gF2T8HyDbhla")
       .then(
         (result) => {
           console.log(result.text);
-          clearState();
+          e.target.reset();
+          setEmailSentPrompt('.    Mail sent successfully!');
         },
         (error) => {
           console.log(error.text);
+          setEmailSentPrompt('.    Mail cannot be sent at this moment, Please try again later!');
         }
       );
+    setTimeout(() => {
+      setEmailSentPrompt('');
+    }, 3000);
   };
   return (
     <div>
@@ -103,6 +105,7 @@ export const Contact = () => {
                 <button type="submit" className="btn btn-custom btn-lg">
                   Send Message
                 </button>
+                <span>{emailSentPrompt}</span>
               </form>
             </div>
           </div>

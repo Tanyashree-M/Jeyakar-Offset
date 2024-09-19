@@ -708,3 +708,8 @@ label {
   color: #608dfd;
   background: #fff;
 }
+
+.page-scroll.active {
+  color: #6372ff !important;
+  text-shadow: 2px 2px 10px rgba(92, 169, 251, 0.8);
+}

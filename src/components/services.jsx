@@ -63,7 +63,7 @@ export const Services = () => {
         <div className="section-title">
           <h2>Our Services</h2>
         </div>
-        <div className="row" style={{ "backgroundColor": "white" }}>
+        <div className="row" style={{ "backgroundColor": "white", "display": "flex", "flexWrap": "wrap" }}>
           {services
             ? services.map((d, i) => (
               <div key={`${d.name}-${i}`} className="col-md-4" style={{ "color": "black" }}>
