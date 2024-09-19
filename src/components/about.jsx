@@ -17,48 +17,63 @@ export const About = () => {
     ]
   }
 
+  const carousel_style = {
+    'height': '500px',
+    'position': 'relative',
+  }
+
+  const chevron_style = {
+    "position": "absolute",
+    'top': '50%',
+    'color': 'black',
+    'backgroundColor': 'grey',
+    'borderRadius': '50%',
+    'width': '25px',
+    'height': '25px',
+  };
+
   return (
     <div>
-      <div id="myCarousel" className="carousel slide" data-bs-ride="carousel" interval="1500" >
+      <div id="myCarousel" className="carousel slide" data-bs-ride="carousel" interval="1" data-pause="false" >
 
-        <ol className="carousel-indicators">
-          <li data-target="#myCarousel" data-slide-to="0" className="active"></li>
-          <li data-target="#myCarousel" data-slide-to="1"></li>
-          <li data-target="#myCarousel" data-slide-to="2"></li>
-          <li data-target="#myCarousel" data-slide-to="3"></li>
-        </ol>
+        <div style={carousel_style}>
+          <ol className="carousel-indicators">
+            <li data-target="#myCarousel" data-slide-to="0" className="active"></li>
+            <li data-target="#myCarousel" data-slide-to="1"></li>
+            <li data-target="#myCarousel" data-slide-to="2"></li>
+            <li data-target="#myCarousel" data-slide-to="3"></li>
+          </ol>
+          <div className="carousel-inner">
 
-        <div className="carousel-inner" style={{
-          "display": "flex", "justify-content": "center",
-          "height": "100vh"
-        }}>
+            <div className="item active" >
+              <img src="./img/about/about1.jpg" alt="about images" style={{
+                "height": "500px", "margin": "0 auto", "display": "block"
+              }} />
+            </div>
 
-          <div className="item active" >
-            <img src="./img/about/about1.png" alt="about images" />
+            <div className="item" >
+              <img src="./img/about/about2.jpg" alt="about images" style={{ "height": "500px", "margin": "0 auto", "display": "block" }} />
+            </div>
+
+            <div className="item"  >
+              <img src="./img/about/about3.jpg" alt="about images" style={{ "height": "500px", "margin": "0 auto", "display": "block" }} />
+            </div>
+
+            <div className="item"  >
+              <img src="./img/about/about4.jpg" alt="about images" style={{ "height": "500px", "margin": "0 auto", "display": "block" }} />
+
+            </div>
+
           </div>
-
-          <div className="item" >
-            <img src="./img/about/about2.png" alt="about images" />
-          </div>
-
-          <div className="item" >
-            <img src="./img/about/about3.png" alt="about images" />
-          </div>
-
-          <div className="item" >
-            <img src="./img/about/about4.png" alt="about images" />
-
-          </div>
-
+          <a className="left carousel-control" href="#myCarousel" data-slide="prev" >
+            <i className="fa fa-chevron-left" style={chevron_style}></i>
+            <span className="sr-only">Previous</span>
+          </a>
+          <a className="right carousel-control" href="#myCarousel" data-slide="next">
+            <i className="fa fa-chevron-right" style={chevron_style}></i>
+            <span className="sr-only">Next</span>
+          </a>
         </div>
-        <a className="left carousel-control" href="#myCarousel" data-slide="prev" >
-          <i className="fa fa-chevron-left" style={{ "position": "absolute", 'top': '50%', 'color': 'black' }}></i>
-          <span className="sr-only">Previous</span>
-        </a>
-        <a className="right carousel-control" href="#myCarousel" data-slide="next">
-          <i className="fa fa-chevron-right" style={{ "position": "absolute", 'top': '50%', 'color': 'black' }}></i>
-          <span className="sr-only">Next</span>
-        </a>
       </div>
       <h2 style={{ "margin-top": "20px" }}>About Us</h2>
       <p>{about ? about.paragraph : "loading..."}</p>
