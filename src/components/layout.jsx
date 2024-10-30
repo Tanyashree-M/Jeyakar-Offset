@@ -4,10 +4,10 @@ import Scroll from "./scroll";
 
 export const Layout = () => {
   return (
-    <div>
-      <nav id="menu" className="navbar navbar-default navbar-fixed-top">
+    <div >
+      <nav id="menu" className="navbar navbar-default navbar-fixed-top " >
         <div className="container">
-          <div className="navbar-header">
+          <div className="navbar-header" >
             <button
               type="button"
               className="navbar-toggle collapsed"
@@ -21,9 +21,10 @@ export const Layout = () => {
               <span className="icon-bar"></span>{" "}
             </button>
             <NavLink className="navbar-brand page-scroll" to="/" >
-              JEYAKAR
+              <img src="./img/logo/jop.svg" style={{ "width": "100px", "height": "110px", "position": "absolute", "top": "0%", "left": "0%" }} />
             </NavLink>{" "}
           </div>
+
 
           <div
             className="collapse navbar-collapse"

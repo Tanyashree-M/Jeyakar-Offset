@@ -2,32 +2,25 @@ import React from "react";
 
 export const About = () => {
   const about = {
-    "paragraph": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+    "paragraph": "Jeyakar Offset Printers (P) Ltd, our prestigious institution is one of the finest in offset printing in Sivakasi. It is located in the bustling area near Sivakasi bus stand. We have a long history dating back to 1964, when our great grandfather established this offset with a single machine. Today, we are in the process of developing it into a quality printing institution with several machineries and value added services.We here at Jeyakar Offset provide multi-color printing with added embellishments of lamination, foil and UV through inhouse and outsourcing. With services like binding, pasting and packaging making your order complete.",
     "Why": [
-      "Lorem ipsum dolor",
-      "Tempor incididunt",
-      "Lorem ipsum dolor",
-      "Incididunt ut labore"
-    ],
-    "Why2": [
-      "Aliquip ex ea commodo",
-      "Lorem ipsum dolor",
-      "Exercitation ullamco",
-      "Lorem ipsum dolor"
+      "Trending and aesthetic designs",
+      "High quality multi-color printing",
+      "Value added services",
+      "Safe Packaging and delivery options"
     ]
   }
 
   const carousel_style = {
     'height': '500px',
     'position': 'relative',
+    "margin-top": "80px"
   }
 
   const chevron_style = {
     "position": "absolute",
     'top': '50%',
     'color': 'black',
-    'backgroundColor': 'grey',
-    'borderRadius': '50%',
     'width': '25px',
     'height': '25px',
   };
@@ -75,7 +68,7 @@ export const About = () => {
           </a>
         </div>
       </div>
-      <h2 style={{ "margin-top": "20px" }}>About Us</h2>
+      <h2 style={{ "margin-top": "50px" }}>About Us</h2>
       <p>{about ? about.paragraph : "loading..."}</p>
       <h3>Why Choose Us?</h3>
       <div className="list-style">
@@ -84,15 +77,6 @@ export const About = () => {
             {about
               ? about.Why.map((d, i) => (
                 <li key={`${d}-${i}`}>{d}</li>
-              ))
-              : "loading"}
-          </ul>
-        </div>
-        <div className="col-lg-6 col-sm-6 col-xs-12">
-          <ul>
-            {about
-              ? about.Why2.map((d, i) => (
-                <li key={`${d}-${i}`}> {d}</li>
               ))
               : "loading"}
           </ul>

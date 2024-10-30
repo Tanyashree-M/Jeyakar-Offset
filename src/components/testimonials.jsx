@@ -12,19 +12,19 @@ export const Testimonials = () => {
         <div className="row">
           {testimonials
             ? testimonials.map((d, i) => (
-                <div key={`${d.name}-${i}`} className="col-md-4">
-                  <div className="testimonial">
-                    <div className="testimonial-image">
-                      {" "}
-                      <img src={d.img} alt="" />{" "}
-                    </div>
-                    <div className="testimonial-content">
-                      <p>"{d.text}"</p>
-                      <div className="testimonial-meta"> - {d.name} </div>
-                    </div>
+              <div key={`${d.name}-${i}`} className="col-md-4">
+                <div className="testimonial">
+                  <div className="testimonial-image">
+                    {" "}
+                    <img src={d.img} alt="" />{" "}
+                  </div>
+                  <div className="testimonial-content">
+                    <p>"{d.text}"</p>
+                    <div className="testimonial-meta"> - {d.name} </div>
                   </div>
                 </div>
-              ))
+              </div>
+            ))
             : "loading"}
         </div>
       </div>
@@ -33,6 +33,6 @@ export const Testimonials = () => {
 };
 
 export const testimonialsLoader = async () => {
-  const res = await fetch ('http://localhost:3001/Testimonials')
+  const res = await fetch('http://localhost:3001/Testimonials')
   return res.json()
 }
