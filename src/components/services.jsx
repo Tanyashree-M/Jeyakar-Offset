@@ -94,7 +94,7 @@ export const Services = () => {
             <div className="item" >
               <img src="./img/services/service3.jpg" alt="services images" style={{ "height": "500px", "margin": "0 auto", "display": "block" }} />
               <div class="carousel-caption">
-                <p>LA is always so much fun!</p>
+                <p>Jeyakar</p>
               </div>
             </div>
 
