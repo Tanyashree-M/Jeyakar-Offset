@@ -87,7 +87,7 @@ export const Services = () => {
                 "height": "500px", "margin": "0 auto", "display": "block"
               }} />
               <div class="carousel-caption">
-                <p>LA is always so much fun!</p>
+                <p>Jeyakar</p>
               </div>
             </div>
 
@@ -100,30 +100,51 @@ export const Services = () => {
 
             <div className="item"  >
               <img src="./img/services/service1.jpg" alt="services images" style={{ "height": "500px", "margin": "0 auto", "display": "block" }} />
+              <div class="carousel-caption">
+                <p>Jeyakar</p>
+              </div>
             </div>
 
             <div className="item"  >
               <img src="./img/services/service4.jpg" alt="services images" style={{ "height": "500px", "margin": "0 auto", "display": "block" }} />
+              <div class="carousel-caption">
+                <p>Jeyakar</p>
+              </div>
             </div>
 
             <div className="item"  >
               <img src="./img/services/service5.jpg" alt="services images" style={{ "height": "500px", "margin": "0 auto", "display": "block" }} />
+              <div class="carousel-caption">
+                <p>Jeyakar</p>
+              </div>
             </div>
 
             <div className="item"  >
               <img src="./img/services/service6.jpg" alt="services images" style={{ "height": "500px", "margin": "0 auto", "display": "block" }} />
+              <div class="carousel-caption">
+                <p>Jeyakar</p>
+              </div>
             </div>
 
             <div className="item"  >
               <img src="./img/services/service7.jpg" alt="services images" style={{ "height": "500px", "margin": "0 auto", "display": "block" }} />
+              <div class="carousel-caption">
+                <p>Jeyakar</p>
+              </div>
             </div>
 
             <div className="item"  >
               <img src="./img/services/service8.jpg" alt="services images" style={{ "height": "500px", "margin": "0 auto", "display": "block" }} />
+              <div class="carousel-caption">
+                <p>Jeyakar</p>
+              </div>
             </div>
 
             <div className="item"  >
               <img src="./img/services/service9.jpg" alt="services images" style={{ "height": "500px", "margin": "0 auto", "display": "block" }} />
+              <div class="carousel-caption">
+                <p>Jeyakar</p>
+              </div>
             </div>
 
           </div>
