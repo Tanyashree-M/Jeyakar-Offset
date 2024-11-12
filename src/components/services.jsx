@@ -82,41 +82,41 @@ export const Services = () => {
           <div className="carousel-inner">
 
             <div className="item active" >
-              <img src="./img/services/service2.jpg" alt="services images" style={carousel_style} />
+              <img src="./img/services/1.png" alt="services images" style={carousel_style} />
             </div>
 
             <div className="item" >
-              <img src="./img/services/service3.jpg" alt="services images" style={carousel_style} />
+              <img src="./img/services/2.png" alt="services images" style={carousel_style} />
             </div>
 
             <div className="item"  >
-              <img src="./img/services/service5.jpg" alt="services images" style={carousel_style} />
+              <img src="./img/services/3.png" alt="services images" style={carousel_style} />
             </div>
 
             <div className="item"  >
-              <img src="./img/services/service1.jpg" alt="services images" style={carousel_style} />
+              <img src="./img/services/4.png" alt="services images" style={carousel_style} />
             </div>
 
 
             <div className="item"  >
-              <img src="./img/services/service4.jpg" alt="services images" style={carousel_style} />
+              <img src="./img/services/5.png" alt="services images" style={carousel_style} />
             </div>
 
             <div className="item"  >
-              <img src="./img/services/service6.jpg" alt="services images" style={carousel_style} />
+              <img src="./img/services/6.png" alt="services images" style={carousel_style} />
 
             </div>
 
             <div className="item"  >
-              <img src="./img/services/service7.jpg" alt="services images" style={carousel_style} />
+              <img src="./img/services/7.png" alt="services images" style={carousel_style} />
             </div>
 
             <div className="item"  >
-              <img src="./img/services/service8.jpg" alt="services images" style={carousel_style} />
+              <img src="./img/services/8.png" alt="services images" style={carousel_style} />
             </div>
 
             <div className="item"  >
-              <img src="./img/services/service9.jpg" alt="services images" style={carousel_style} />
+              <img src="./img/services/9.png" alt="services images" style={carousel_style} />
             </div>
 
           </div>

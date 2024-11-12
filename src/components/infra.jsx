@@ -32,21 +32,21 @@ export const Infra = () => {
           <div className="carousel-inner">
 
             <div className="item active" >
-              <img src="./img/infra/infra 1.jpg" alt="infra images" style={{
+              <img src="./img/infra/infra1.png" alt="infra images" style={{
                 "height": "500px", "margin": "0 auto", "display": "block"
               }} />
             </div>
 
             <div className="item" >
-              <img src="./img/infra/infra2.jpg" alt="infra images" style={{ "height": "500px", "margin": "0 auto", "display": "block" }} />
+              <img src="./img/infra/infra2.png" alt="infra images" style={{ "height": "500px", "margin": "0 auto", "display": "block" }} />
             </div>
 
             <div className="item"  >
-              <img src="./img/infra/infra 3.jpg" alt="infra images" style={{ "height": "500px", "margin": "0 auto", "display": "block" }} />
+              <img src="./img/infra/infra3.png" alt="infra images" style={{ "height": "500px", "margin": "0 auto", "display": "block" }} />
             </div>
 
             <div className="item"  >
-              <img src="./img/infra/infra 4.jpg" alt="infra images" style={{ "height": "500px", "margin": "0 auto", "display": "block" }} />
+              <img src="./img/infra/infra4.png" alt="infra images" style={{ "height": "500px", "margin": "0 auto", "display": "block" }} />
 
             </div>
 
