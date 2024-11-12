@@ -25,7 +25,7 @@ export const Services = () => {
       "text": "Our team makes sure we have only the best and quality content on hand of our consumers."
     },
     {
-      "name": "CALENDERS",
+      "name": "CALENDARS",
       "text": "Our team makes sure we have only the best and quality content on hand of our consumers."
     },
     {
@@ -47,9 +47,9 @@ export const Services = () => {
   ]
 
   const carousel_style = {
-    'height': '500px',
-    'position': 'relative',
-    'margin-top': '80px'
+    'width': '100 %',
+    'height': 'auto',
+    'objectFit': 'contain'
   }
 
   const chevron_style = {
@@ -66,7 +66,7 @@ export const Services = () => {
     <div>
       <div id="servicesCarousel" className="carousel slide" data-bs-ride="carousel" interval="1" data-pause="false" >
 
-        <div style={carousel_style}>
+        <div style={{ 'marginTop': '70px' }}>
           <ol className="carousel-indicators">
             <li data-target="#servicesCarousel" data-slide-to="0" className="active"></li>
             <li data-target="#servicesCarousel" data-slide-to="1"></li>
@@ -77,74 +77,46 @@ export const Services = () => {
             <li data-target="#servicesCarousel" data-slide-to="6"></li>
             <li data-target="#servicesCarousel" data-slide-to="7"></li>
             <li data-target="#servicesCarousel" data-slide-to="8"></li>
-            <li data-target="#servicesCarousel" data-slide-to="9"></li>
 
           </ol>
           <div className="carousel-inner">
 
             <div className="item active" >
-              <img src="./img/services/service2.jpg" alt="services images" style={{
-                "height": "500px", "margin": "0 auto", "display": "block"
-              }} />
-              <div class="carousel-caption">
-                <p>Jeyakar</p>
-              </div>
+              <img src="./img/services/service2.jpg" alt="services images" style={carousel_style} />
             </div>
 
             <div className="item" >
-              <img src="./img/services/service3.jpg" alt="services images" style={{ "height": "500px", "margin": "0 auto", "display": "block" }} />
-              <div class="carousel-caption">
-                <p>Jeyakar</p>
-              </div>
+              <img src="./img/services/service3.jpg" alt="services images" style={carousel_style} />
             </div>
 
             <div className="item"  >
-              <img src="./img/services/service1.jpg" alt="services images" style={{ "height": "500px", "margin": "0 auto", "display": "block" }} />
-              <div class="carousel-caption">
-                <p>Jeyakar</p>
-              </div>
+              <img src="./img/services/service5.jpg" alt="services images" style={carousel_style} />
             </div>
 
             <div className="item"  >
-              <img src="./img/services/service4.jpg" alt="services images" style={{ "height": "500px", "margin": "0 auto", "display": "block" }} />
-              <div class="carousel-caption">
-                <p>Jeyakar</p>
-              </div>
+              <img src="./img/services/service1.jpg" alt="services images" style={carousel_style} />
+            </div>
+
+
+            <div className="item"  >
+              <img src="./img/services/service4.jpg" alt="services images" style={carousel_style} />
             </div>
 
             <div className="item"  >
-              <img src="./img/services/service5.jpg" alt="services images" style={{ "height": "500px", "margin": "0 auto", "display": "block" }} />
-              <div class="carousel-caption">
-                <p>Jeyakar</p>
-              </div>
+              <img src="./img/services/service6.jpg" alt="services images" style={carousel_style} />
+
             </div>
 
             <div className="item"  >
-              <img src="./img/services/service6.jpg" alt="services images" style={{ "height": "500px", "margin": "0 auto", "display": "block" }} />
-              <div class="carousel-caption">
-                <p>Jeyakar</p>
-              </div>
+              <img src="./img/services/service7.jpg" alt="services images" style={carousel_style} />
             </div>
 
             <div className="item"  >
-              <img src="./img/services/service7.jpg" alt="services images" style={{ "height": "500px", "margin": "0 auto", "display": "block" }} />
-              <div class="carousel-caption">
-                <p>Jeyakar</p>
-              </div>
+              <img src="./img/services/service8.jpg" alt="services images" style={carousel_style} />
             </div>
 
             <div className="item"  >
-              <img src="./img/services/service8.jpg" alt="services images" style={{ "height": "500px", "margin": "0 auto", "display": "block" }} />
-              <div class="carousel-caption">
-                <p>Jeyakar</p>
-              </div>
-            </div>
-
-            <div className="item"  >
-              <img src="./img/services/service9.jpg" alt="services images" style={{ "height": "500px", "margin": "0 auto", "display": "block" }} />
-              <div class="carousel-caption">
-                <p>Jeyakar</p>
-              </div>
+              <img src="./img/services/service9.jpg" alt="services images" style={carousel_style} />
             </div>
 
           </div>

@@ -121,7 +121,7 @@ hr {
   bottom: -1px;
   width: 0;
   height: 2px;
-  background: linear-gradient(to right, #6372ff 0%, #5ca9fb 100%);
+  background: linear-gradient(90deg, #27AAE1 20%, #EE2A7B 50%, #FFF200 100%);
   content: "";
   transition: width 0.2s;
 }
@@ -145,7 +145,7 @@ hr {
   bottom: -1px !important;
   width: 100% !important;
   height: 2px !important;
-  background: linear-gradient(to right, #6372ff 0%, #5ca9fb 100%) !important;
+  background: linear-gradient(to right, #27AAE1 0%, #27AAE1 100%) !important;
   content: "" !important;
   transition: width 0.2s !important;
 }
@@ -178,7 +178,7 @@ hr {
 .section-title h2::after {
   position: absolute;
   content: "";
-  background: linear-gradient(to right, #5ca9fb 0%, #6372ff 100%);
+  background: rgba(255, 255, 255, 0.3);
   height: 4px;
   width: 60px;
   bottom: 0;
@@ -198,7 +198,8 @@ hr {
   background-image: linear-gradient(to right, #27AAE1 0%, #54ccff 100%);
   padding: 14px 34px;
   letter-spacing: 1px;
-  margin-left: 42%;
+  display: block;
+  margin: auto;
   margin-top: 20px;
   font-size: 15px;
   font-weight: 500;
@@ -289,60 +290,56 @@ header .intro-text {
   text-align: center;
 }
 
-/* Features Section */
-#features {
-  background: #f6f6f6;
+/* Infra Section */
+#infra {
+  background: linear-gradient(to right, #27AAE1 0%, #218cff 100%);
 }
 
-#features h2 {
-  margin-top: 150px;
+#infra h2 {
+  margin-top: 50px;
+  text-align: center;
+  color: white;
 }
 
-
-#features i.fa {
-  font-size: 38px;
-  margin-bottom: 20px;
-  transition: all 0.5s;
-  color: #fff;
-  width: 100px;
-  height: 100px;
-  padding: 30px 0;
-  border-radius: 50%;
-  background: linear-gradient(to right, #6372ff 0%, #5ca9fb 100%);
-  box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.05);
+#infra li {
+  text-align: center;
+  font-size: 18px;
+  color: white;
+  padding: 10px;
 }
+
 
 /* About Section */
-#about {
-  padding: 100px 0;
-}
 
 #about h3 {
   font-size: 22px;
   margin: 0 0 20px;
+  padding-left: 10px;
+
 }
 
 #about h2 {
   position: relative;
   margin-bottom: 15px;
+  margin-top: 50px;
   padding-bottom: 15px;
+  padding-left: 10px;
 }
 
 #about h2::after {
   position: absolute;
   content: "";
-  background: linear-gradient(to right, #5ca9fb 0%, #6372ff 100%);
+  background: linear-gradient(90deg, #27AAE1 20%, #EE2A7B 50%, #FFF200 100%);
   height: 4px;
-  width: 60px;
+  width: 100px;
   bottom: 0;
-  left: 0;
+  left: 10px;
 }
 
 #about .about-text li {
   margin-bottom: 6px;
-  margin-left: 6px;
-  list-style: none;
-  padding: 0;
+  margin-left: 20px;
+  padding: 5px;
 }
 
 #about .about-text li:before {
@@ -354,23 +351,23 @@ header .intro-text {
   padding-right: 8px;
 }
 
-#about img {
+/* #about img {
   width: 520px;
   margin-top: 10px;
   background: #fff;
   border-right: 0;
   box-shadow: 0 0 50px rgba(0, 0, 0, 0.06);
-}
+} */
 
 #about p {
-  line-height: 24px;
-  margin: 30px 0;
+  line-height: 30px;
+  margin: 10px;
 }
 
 /* Services Section */
 #services {
   padding: 100px 0;
-  background: linear-gradient(to right, #6372ff 0%, #5ca9fb 100%);
+  background: linear-gradient(to right, #27AAE1 0%, #218cff 100%);
   color: #fff;
 }
 
@@ -421,6 +418,10 @@ header .intro-text {
 /* Portfolio Section */
 #portfolio {
   padding: 100px 0;
+}
+
+#portfolio h2::after {
+  background: linear-gradient(90deg, #27AAE1 20%, #EE2A7B 50%, #FFF200 100%);
 }
 
 .portfolio-item {
@@ -717,6 +718,6 @@ label {
 }
 
 .page-scroll.active {
-  color: #6372ff !important;
-  text-shadow: 2px 2px 10px rgba(92, 169, 251, 0.8);
+  color: #27AAE1 !important;
+  text-shadow: 2px 2px 10px #7ed8fe;
 }

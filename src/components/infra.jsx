@@ -1,18 +1,6 @@
 import React from "react";
 
 export const Infra = () => {
-  const infra = [
-    {
-      "title": "PREPRESS"
-    },
-    {
-      "title": "PRINTING"
-    },
-    {
-      "title": "BINDING"
-    }
-  ]
-
   const carousel_style = {
     'height': '500px',
     'position': 'relative',
@@ -26,6 +14,8 @@ export const Infra = () => {
     'width': '25px',
     'height': '25px',
   };
+
+
 
 
   return (
@@ -71,20 +61,15 @@ export const Infra = () => {
           </a>
         </div>
       </div>
-      <div id="features" className="text-center">
+      <div id="infra" className="text-center">
         <div className="container">
           <div className="col-md-10 col-md-offset-1 section-title">
             <h2>Infrastructure</h2>
-          </div>
-          <div className="row">
-            {infra
-              ? infra.map((d, i) => (
-                <div key={`${d.title}-${i}`} className="col-xs-6 col-md-3">
-                  {" "}
-                  <h3>{d.title}</h3>
-                </div>
-              ))
-              : "Loading..."}
+            <ul>
+              <li>PREPRESS</li>
+              <li>PRINTING</li>
+              <li>BINDING</li>
+            </ul>
           </div>
         </div>
       </div>

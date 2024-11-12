@@ -12,11 +12,10 @@ export const About = () => {
   }
 
   const carousel_style = {
-    'height': '500px',
-    'position': 'relative',
-    "margin-top": "80px"
+    'width': '100 %',
+    'height': 'auto',
+    'objectFit': 'contain'
   }
-
   const chevron_style = {
     "position": "absolute",
     'top': '50%',
@@ -26,34 +25,32 @@ export const About = () => {
   };
 
   return (
-    <div>
-      <div id="myCarousel" className="carousel slide" data-bs-ride="carousel" interval="1" data-pause="false" >
+    <div id="about">
+      <div id="myCarousel" className="carousel slide" data-ride="carousel" interval="1" data-pause="false" style={{ "marginTop": '70px' }} >
+        <ol className="carousel-indicators">
+          <li data-target="#myCarousel" data-slide-to="0" className="active"></li>
+          <li data-target="#myCarousel" data-slide-to="1"></li>
+          <li data-target="#myCarousel" data-slide-to="2"></li>
+          <li data-target="#myCarousel" data-slide-to="3"></li>
+        </ol>
+        <div >
 
-        <div style={carousel_style}>
-          <ol className="carousel-indicators">
-            <li data-target="#myCarousel" data-slide-to="0" className="active"></li>
-            <li data-target="#myCarousel" data-slide-to="1"></li>
-            <li data-target="#myCarousel" data-slide-to="2"></li>
-            <li data-target="#myCarousel" data-slide-to="3"></li>
-          </ol>
           <div className="carousel-inner">
 
-            <div className="item active" >
-              <img src="./img/about/about1.jpg" alt="about images" style={{
-                "height": "500px", "margin": "0 auto", "display": "block"
-              }} />
+            <div style={carousel_style} className="item active" >
+              <img src="./img/about/about1.png" alt="about images" />
             </div>
 
-            <div className="item" >
-              <img src="./img/about/about2.jpg" alt="about images" style={{ "height": "500px", "margin": "0 auto", "display": "block" }} />
+            <div style={carousel_style} className="item" >
+              <img src="./img/about/about2.jpg" alt="about images" />
             </div>
 
-            <div className="item"  >
-              <img src="./img/about/about3.jpg" alt="about images" style={{ "height": "500px", "margin": "0 auto", "display": "block" }} />
+            <div style={carousel_style} className="item"  >
+              <img src="./img/about/about3.png" alt="about images" />
             </div>
 
-            <div className="item"  >
-              <img src="./img/about/about4.jpg" alt="about images" style={{ "height": "500px", "margin": "0 auto", "display": "block" }} />
+            <div style={carousel_style} className="item"  >
+              <img src="./img/about/about4.jpg" alt="about images" />
 
             </div>
 
@@ -67,19 +64,23 @@ export const About = () => {
             <span className="sr-only">Next</span>
           </a>
         </div>
+
       </div>
+
       <h2 style={{ "margin-top": "50px" }}>About Us</h2>
       <p>{about ? about.paragraph : "loading..."}</p>
-      <h3>Why Choose Us?</h3>
+      <h3 >Why Choose Us?</h3>
       <div className="list-style">
-        <div className="col-lg-6 col-sm-6 col-xs-12">
-          <ul>
-            {about
-              ? about.Why.map((d, i) => (
-                <li key={`${d}-${i}`}>{d}</li>
-              ))
-              : "loading"}
-          </ul>
+        <div className="about-text">
+          <div className="col-lg-6 col-sm-6 col-xs-12">
+            <ul>
+              {about
+                ? about.Why.map((d, i) => (
+                  <li key={`${d}-${i}`}>{d}</li>
+                ))
+                : "loading"}
+            </ul>
+          </div>
         </div>
       </div>
     </div >
