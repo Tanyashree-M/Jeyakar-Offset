@@ -20,7 +20,7 @@ export const Infra = () => {
     <div style={carousel_style}>
       <div id="infraCarousel" className="carousel slide" data-bs-ride="carousel" interval="1" data-pause="false" >
 
-        <div>
+        <div >
           <ol className="carousel-indicators">
             <li data-target="#infraCarousel" data-slide-to="0" className="active"></li>
             <li data-target="#infraCarousel" data-slide-to="1"></li>

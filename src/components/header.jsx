@@ -5,8 +5,8 @@ export const Header = () => {
     return (
         <header id="header">
             <div className="intro">
-                <div className="container" style={{ 'paddingTop': '100px' }}>
-                    <div className="row" style={{ "backgroundColor": "#000", "opacity": "0.5", 'borderRadius': '40px' }}>
+                <div className="container" style={{ 'paddingTop': '100px', 'maxWidth': '100%' }}>
+                    <div className="row" style={{ "backgroundColor": "#000", "opacity": "0.5", 'borderRadius': '40px', 'margin': '0 auto' }}>
                         <div className="col-md-8 col-md-offset-2 intro-text"  >
                             <h1>
                                 Welcome TO JEYAKAR.

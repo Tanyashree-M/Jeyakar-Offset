@@ -50,7 +50,7 @@ export const Products = () => {
     }
   ]
   return (
-    <div id="portfolio" className="text-center">
+    <div id="products" className="text-center">
       <div className="container">
         <div className="section-title">
           <h2>Products</h2>

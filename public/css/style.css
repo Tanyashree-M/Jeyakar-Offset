@@ -293,6 +293,7 @@ header .intro-text {
 /* Infra Section */
 #infra {
   background: linear-gradient(to right, #27AAE1 0%, #218cff 100%);
+  height: 25%;
 }
 
 #infra h2 {
@@ -303,7 +304,7 @@ header .intro-text {
 
 #infra li {
   text-align: center;
-  font-size: 18px;
+  font-size: 25px;
   color: white;
   padding: 10px;
 }
@@ -350,14 +351,6 @@ header .intro-text {
   font-weight: 300;
   padding-right: 8px;
 }
-
-/* #about img {
-  width: 520px;
-  margin-top: 10px;
-  background: #fff;
-  border-right: 0;
-  box-shadow: 0 0 50px rgba(0, 0, 0, 0.06);
-} */
 
 #about p {
   line-height: 30px;
@@ -415,21 +408,21 @@ header .intro-text {
   margin-bottom: 40px;
 }
 
-/* Portfolio Section */
-#portfolio {
+/* Products Section */
+#products {
   padding: 100px 0;
 }
 
-#portfolio h2::after {
+#products h2::after {
   background: linear-gradient(90deg, #27AAE1 20%, #EE2A7B 50%, #FFF200 100%);
 }
 
-.portfolio-item {
+.products-item {
   margin: 1px -15px 0 -14px;
   padding: 0;
 }
 
-.portfolio-item .hover-bg {
+.products-item .hover-bg {
   overflow: hidden;
   position: relative;
   margin: 0;
