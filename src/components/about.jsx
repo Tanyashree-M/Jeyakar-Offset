@@ -26,7 +26,7 @@ export const About = () => {
 
   return (
     <div id="about">
-      <div id="myCarousel" className="carousel slide" data-ride="carousel" interval="1" data-pause="false" style={{ "marginTop": '70px' }} >
+      <div id="myCarousel" className="carousel slide" date-interval="1000" data-ride="carousel" style={{ "marginTop": '70px' }} >
         <ol className="carousel-indicators">
           <li data-target="#myCarousel" data-slide-to="0" className="active"></li>
           <li data-target="#myCarousel" data-slide-to="1"></li>

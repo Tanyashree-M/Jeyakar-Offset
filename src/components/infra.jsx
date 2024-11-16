@@ -2,8 +2,6 @@ import React from "react";
 
 export const Infra = () => {
   const carousel_style = {
-    'height': '500px',
-    'position': 'relative',
     "margin-top": "80px"
   }
 
@@ -19,10 +17,10 @@ export const Infra = () => {
 
 
   return (
-    <div>
+    <div style={carousel_style}>
       <div id="infraCarousel" className="carousel slide" data-bs-ride="carousel" interval="1" data-pause="false" >
 
-        <div style={carousel_style}>
+        <div>
           <ol className="carousel-indicators">
             <li data-target="#infraCarousel" data-slide-to="0" className="active"></li>
             <li data-target="#infraCarousel" data-slide-to="1"></li>
@@ -32,21 +30,19 @@ export const Infra = () => {
           <div className="carousel-inner">
 
             <div className="item active" >
-              <img src="./img/infra/infra1.png" alt="infra images" style={{
-                "height": "500px", "margin": "0 auto", "display": "block"
-              }} />
+              <img src="./img/infra/infra1.png" alt="infra images" />
             </div>
 
             <div className="item" >
-              <img src="./img/infra/infra2.png" alt="infra images" style={{ "height": "500px", "margin": "0 auto", "display": "block" }} />
+              <img src="./img/infra/infra2.png" alt="infra images" />
             </div>
 
             <div className="item"  >
-              <img src="./img/infra/infra3.png" alt="infra images" style={{ "height": "500px", "margin": "0 auto", "display": "block" }} />
+              <img src="./img/infra/infra3.png" alt="infra images" />
             </div>
 
             <div className="item"  >
-              <img src="./img/infra/infra4.png" alt="infra images" style={{ "height": "500px", "margin": "0 auto", "display": "block" }} />
+              <img src="./img/infra/infra4.png" alt="infra images" />
 
             </div>
 
