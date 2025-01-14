@@ -58,17 +58,17 @@ export const Products = () => {
         <div class="row">
           <div class="col-12 col-md-4" style={{ 'padding': '10px' }}>
             <div class="embed-responsive embed-responsive-16by9">
-              <video controls autoplay loop src="img/products/v1.mp4" class="embed-responsive-item"></video>
+              <video controls autoPlay loop muted src="img/products/v1.mp4" class="embed-responsive-item"></video>
             </div>
           </div>
           <div class="col-12 col-md-4" style={{ 'padding': '10px' }}>
             <div class="embed-responsive embed-responsive-16by9">
-              <video controls autoplay loop src="img/products/v2.mp4" class="embed-responsive-item"></video>
+              <video controls autoPlay loop muted src="img/products/v2.mp4" class="embed-responsive-item"></video>
             </div>
           </div>
           <div class="col-12 col-md-4" style={{ 'padding': '10px' }}>
             <div class="embed-responsive embed-responsive-16by9">
-              <video controls autoplay loop src="img/products/v3.mp4" class="embed-responsive-item"></video>
+              <video controls autoPlay loop muted src="img/products/v3.mp4" class="embed-responsive-item"></video>
             </div>
           </div>
         </div>
